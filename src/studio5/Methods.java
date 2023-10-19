@@ -34,7 +34,7 @@ public class Methods {
 		// TODO: Draw the remaining rings of the bull's eye
 		// Blue ring with 3.0/4.0 the radius
 		// suggested rgb values: 0, 109, 219
-
+		
 		
 
 		// Red ring with 1.0/2.0 the radius
@@ -61,15 +61,6 @@ public class Methods {
 	 */
 	public static String substituteAll(String source, char target, String replacement) {
 		String result = "";
-		for(int i = 0; i< source.length(); i++) {
-			char n = source.charAt(i); 
-			if(n ==target) {
-			result = result + replacement; 	
-			}
-			else {
-				result = result + n;
-			}
-		}
 		// TODO: Finish this method
 		
 		return result;
@@ -84,7 +75,10 @@ public class Methods {
 	public static int arraySum(int[] values) {
 		int sum = 0;
 		// FIXME: Compute the sum of the values in an array
-		
+		for(int i = 0; i < values.length; i++) {
+			sum += values[i];
+	
+		}
 		return sum;
 	}
 
